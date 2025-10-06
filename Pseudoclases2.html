@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pseudoclases2</title>
+</head>
+<style>
+    p:nth-child(4){
+        background-color: red;
+    }
+    p:nth-child(1)>span:nth-child(2){
+        color: blue;
+        font-weight: bold;
+    }
+    p:nth-of-type(1)>span:nth-child(2){
+        color: blue;
+        font-weight: bold;
+    }
+    p:nth-child(3)>span:nth-child(2){
+        color: blue;
+        font-weight: bold;
+    }
+     p:nth-child(6){
+        background-color: rgb(238, 255, 0);
+    }
+</style>
+<body>
+    <h1>Pseudoclases2</h1>
+    <div>
+    <p>Parrafo A<span>1</span><span>2</span><span>3</span></p>
+    <p>Parrafo B<span>4</span><span>5</span><span>6</span></p>
+    <p>Parrafo C<span>7</span><span>8</span><span>9</span></p>
+    <p>Parrafo D<span>#</span><span>0</span><span>*</span></p>
+
+</div>
+</body>
+</html>
