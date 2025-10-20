@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFERTÓN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #efefef;
+            padding: 20px;
+        }
+
+        /* marco */
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        /* cabecera */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            font-family: "Mea Culpa", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* barra */
+        .options-bar {
+            background-color: #000;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            margin: 20px 0;
+        }
+
+        .option {
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        /* galeria */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            justify-content: space-between;
+        }
+
+        /* tarjeta */
+        .card {
+            width: calc(50% - 24px);
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            font-size: 1.4em;
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .red-stripe {
+            background-color: #e74c3c;
+            height: 6px;
+            width: 120px;
+            margin: 0 auto 15px;
+        }
+
+        .card-image {
+            width: 100%;
+            max-width: 420px;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #eee;
+        }
+
+        .card-description {
+            padding: 15px;
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* responsive */
+        @media (max-width: 900px) {
+            .container {
+                max-width: 92%;
+            }
+            
+            .card {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OFERTÓN</h1>
+        </header>
+        
+        <div class="options-bar">
+            <a href="#card1" class="option">Opción 1</a>
+            <a href="#card2" class="option">Opción 2</a>
+            <a href="#card3" class="option">Opción 3</a>
+            <a href="#card4" class="option">Opción 4</a>
+            <a href="#card5" class="option">Opción 5</a>
+            <a href="#card6" class="option">Opción 6</a>
+        </div>
+        
+        <main class="gallery">
+            <div class="card" id="card1">
+                <h2 class="card-title">McLaren 720S</h2>
+                <div class="red-stripe"></div>
+                <img src="img/mclaren-720s_spider_by_mso-2019-1600-01.avif" alt="McLaren 720S" class="card-image">
+                <p class="card-description">Coche superchulo de la muerte: 100 000 €</p>
+            </div>
+            
+            <div class="card" id="card2">
+                <h2 class="card-title">Ferrari SF90</h2>
+                <div class="red-stripe"></div>
+                <img src="img/novitec-ferrari-sf90-stradale-2.jpg" alt="Ferrari SF90" class="card-image">
+                <p class="card-description">Coche moderno y guay: 30 500 €</p>
+            </div>
+            
+            <div class="card" id="card3">
+                <h2 class="card-title">Bugatti Chiron</h2>
+                <div class="red-stripe"></div>
+                <img src="img/bugatti-chiron_sport-2019-1600-01.jpg" alt="Bugatti Chiron" class="card-image">
+                <p class="card-description">Coche deportivo y pijo: 65 480 €</p>
+            </div>
+            
+            <div class="card" id="card4">
+                <h2 class="card-title">Lamborghini Aventador</h2>
+                <div class="red-stripe"></div>
+                <img src="img/lamborghini-aventador_s_roadster-2018-1600-01.jpg" alt="Lamborghini Aventador" class="card-image">
+                <p class="card-description">Coche para fardar: 92 000 €</p>
+            </div>
+            
+            <div class="card" id="card5">
+                <h2 class="card-title">Porsche 911 Turbo</h2>
+                <div class="red-stripe"></div>
+                <img src="img/mansory-p9lm-evo-900-porsche-911-turbo-s.webp" alt="Porsche 911 Turbo" class="card-image">
+                <p class="card-description">Coche que no está mal: 35 000 €</p>
+            </div>
+            
+            <div class="card" id="card6">
+                <h2 class="card-title">Aston Martin Vantage</h2>
+                <div class="red-stripe"></div>
+                <img src="img/Aston_Martin_Vantage_GT4_01-min-scaled.jpg" alt="Aston Martin Vantage" class="card-image">
+                <p class="card-description">Coche ideal para excursiones al campo: 50 000 €</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
