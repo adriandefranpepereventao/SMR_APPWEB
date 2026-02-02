@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 40px;
+            border: 1px solid #000;
+        }
+        span{
+            display: list-item;
+            list-style-type: decimal;
+            list-style-position: outside;
+        }
+        main{
+            display: table;
+            border: 1px solid #000;
+        }
+        section:nth-of-type(1){
+            display: table-header-group;
+            background-color: #000;
+            color: white;
+        }
+        section:nth-last-of-type(2){
+            display: table-row-group;
+
+        }
+        article{
+            display: table-row;
+        }
+        p{
+            display: table-cell;
+            border: 1 solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body> 
+    
+    <main>
+        
+        <section>
+            <article>
+                <p>encabezado1</p>
+                <p>encabezaado2</p>
+                <p>encabezado3</p>
+                <p>encabezado4</p>
+                <p>encabezado5</p>
+            </article>
+        </section><section>
+            <article>
+                <p>parrafo1</p>
+                <p>parrafo2</p>
+                <p>parrafo3</p>
+                <p>parrafo4</p>
+                <p>parrafo5</p>
+            </article>
+            <article>
+                <p>datos1</p>
+                <p>datos2</p>
+                <p>datos3</p>
+                <p>datos4</p>
+                <p>datos5</p>
+            </article>
+            <article>
+                <p>datos1</p>
+                <p>datos2</p>
+                <p>datos3</p>
+                <p>datos4</p>
+                <p>datos5</p>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>

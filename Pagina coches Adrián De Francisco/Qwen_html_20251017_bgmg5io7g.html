@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFERTÓN - Galería de Coches</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #efefef;
+            padding: 20px;
+        }
+
+        /* marco */
+        .contenedor {
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* cabecera */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* barra */
+        .barra-opciones {
+            background-color: #000;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .opcion {
+            color: white;
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+
+        /* galeria */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            gap: 48px;
+        }
+
+        /* tarjeta */
+        .tarjeta {
+            width: calc(50% - 24px);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .titulo {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .linea-roja {
+            height: 6px;
+            width: 120px;
+            background-color: #e74c3c;
+            margin: 10px auto;
+        }
+
+        .imagen {
+            width: 100%;
+            max-width: 420px;
+            height: 280px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .descripcion {
+            color: #666;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        /* responsive */
+        @media (max-width: 900px) {
+            .contenedor {
+                max-width: 92%;
+            }
+            
+            .tarjeta {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">OFERTÓN</div>
+        </header>
+        
+        <nav class="barra-opciones">
+            <div class="opcion">Opción 1</div>
+            <div class="opcion">Opción 2</div>
+            <div class="opcion">Opción 3</div>
+            <div class="opcion">Opción 4</div>
+            <div class="opcion">Opción 5</div>
+            <div class="opcion">Opción 6</div>
+        </nav>
+        
+        <main class="galeria">
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 1</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=1" alt="Coche 1" class="imagen">
+                <div class="descripcion">Coche superchulo de la muerte: 100 000 €</div>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 2</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=2" alt="Coche 2" class="imagen">
+                <div class="descripcion">Coche moderno y guay: 30 500 €</div>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 3</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=3" alt="Coche 3" class="imagen">
+                <div class="descripcion">Coche deportivo y pijo: 65 480 €</div>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 4</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=4" alt="Coche 4" class="imagen">
+                <div class="descripcion">Coche para fardar: 92 000 €</div>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 5</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=5" alt="Coche 5" class="imagen">
+                <div class="descripcion">Coche que no está mal: 35 000 €</div>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="titulo">IMAGEN 6</div>
+                <div class="linea-roja"></div>
+                <img src="https://picsum.photos/420/280?random=6" alt="Coche 6" class="imagen">
+                <div class="descripcion">Coche ideal para excursiones al campo: 50 000 €</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

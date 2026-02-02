@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table{
+            width: 80%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th,td{
+            width: 25%;
+            border: 1px solid #000;
+            padding: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Título de la tabla</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Año</th> 
+                <th scope="col">Alumnos</th>
+                <th scope="col">Cursos</th>
+            </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th></th>
+            
+            <td>X</td>
+            <td>y</td>
+            <td>z</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <th scope="row">Centro</th>
+            <td colspan="2">2025</td>
+            <td>Aplicaciones web</td>
+        </tr>
+        <tr>
+            <th scope="row">Horario</th>
+            <td rowspan="2">2233</td>
+            <td>4235</td>
+            <td>Aplicaciones web</td>
+        </tr>
+        <tr>
+            <th scope="row">xxx</th>
+            
+            <td>42434343</td>
+            <td>Programación</td>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

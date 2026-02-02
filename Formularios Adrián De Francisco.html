@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre"></label>
+        <imput type="text" name="nombre" id="nombre">
+        <label for="edad">Edad</label>    
+        <input type="number" name="edad" id="edad" step="100">
+        <label for="cita">Cita</label>
+        <imput type="date" name="cita" id="cita">
+        <label for="time">Hora</label>
+        <imput type="time" name="hora" id="hora">
+        <label for="color">Color</label>
+        <imput type="color" name="color" id="color">
+        <label for="email">E-mail</label>
+        <imput type="email" name="email" id="email" placeholder="algo@gmail.com">
+        <label for="aficiones">Aficiones</label>
+        <select name="aficiones" id="aficiones" size="3">
+            <option value="futbol">Fútbol</option>
+            <option value="musica">Música</option>
+            <option value="baile" selected>Baile</option>
+
+        </select>
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios" cols="40" rows="5"></textarea>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="hombre" value="H">
+            <label for="mujer">Mujer</label>
+            <imput type="radio" name="sexo" id="mujer" value="M">
+            <label for="otro">Otro</label>
+            <imput type="radio" name="sexo" id="otro" value="O">
+        </fieldset>
+        <fieldset>
+            <legend>Asignaturas pendientes</legend>
+            <label for="aplicaciones">Aplicaciones Web</label>
+            <imput type="checkbox" name="sistemas" id="sistemas">
+            <label for="sistemas">Sistemas Operativos</label>
+            <imput type="checkbox" name="sistemas" id="sistemas">
+        </fieldset>
+        <imput type="submit" value="Enviar">
+        <imput type="reset" value="Borrar">
+        <imput type="submit" value="Enviar">
+
+        </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Cliente</title>
+</head>
+<style>
+    body{
+        border: 1px solid #000;
+    }
+</style>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="referencia">Referencia cliente:</label>
+            <input type="text" name="referencia" id="referencia" value="234gfg21" readonly>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" value="Escribe aquí">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion" id="direccion">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+
+            <label for="color">Color preferido</label>
+            <input type="color" name="color" id="color" value="#000000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Cita</legend>
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" value="--:--">
+        </fieldset>
+
+        <fieldset>
+            <legend>Presupuesto</legend>
+            <label>Presupuesto</label>
+            100<input type="range" name="presupuesto" min="100" max="1000" value="500">1000
+        </fieldset>
+
+        <fieldset>
+            <legend>Equipo preferido</legend>
+            <select name="equipo" id="equipo" multiple size="4">
+                <option value="rayo">Rayo Vallecano</option>
+                <option value="getafe">Getafe</option>
+                <option value="osasuna">Osasuna</option>
+                <option value="leganes">Leganes</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="chico">Chico:</label>
+            <input type="radio" name="sexo" id="chico" value="chico">
+
+            <label for="chica">Chica:</label>
+            <input type="radio" name="sexo" id="chica" value="chica">
+
+            <label for="otro">Otro:</label>
+            <input type="radio" name="sexo" id="otro" value="otro">
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos</legend>
+            <label for="musica">Música:</label>
+            <input type="checkbox" name="gusto" id="musica" value="musica">
+
+            <label for="cine">Cine:</label>
+            <input type="checkbox" name="gusto" id="cine" value="cine">
+
+            <label for="literatura">Literatura:</label>
+            <input type="checkbox" name="gusto" id="literatura" value="literatura">
+        </fieldset>
+
+        <fieldset>
+            <legend>Cuéntame tu vida</legend>
+            <label for="vida">Enterita</label>
+            <textarea name="vida" id="vida" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>
