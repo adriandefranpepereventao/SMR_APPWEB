@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluqueria</title>
+    <style>
+        header{
+            display: flex;
+        }
+        nav>ol{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            list-style: none;
+        }
+        li{
+            background-color: black;
+            color: white;
+            flex-basis: 200px;
+            height: 40px;
+            padding: 20px;
+            text-align: center;
+        }
+        div{
+            width: 100px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        span{
+            width: 100%;
+            height: 3px;
+            background-color: black;
+        }
+        @media(max-width:800px){
+            nav>ol{
+                flex-direction: column;
+            }
+            li{
+                flex-basis: 30px;
+                border: bottom 1px solid white;
+            }
+            h1{text-align: center;}
+        }
+           
+    
+    </style>
+
+<body>
+    <header>
+        <div>
+            <span></span><span></span><span></span>
+        </div>
+        <h1>TITULO</h1>
+        <nav>
+            <ol>
+                <li>instruccionnes 1</li>
+                <li>instruccionnes 2</li>
+                <li>instruccionnes 3</li>
+                <li>instruccionnes 4</li>
+                <li>instruccionnes 5</li>
+            </ol>
+        </nav>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, tenetur exercitationem quos totam explicabo in eum, quisquam iste reprehenderit nemo minima nulla, voluptate soluta! Nesciunt sed impedit pariatur voluptate a.
+    </header>
+</body>
+</html>
